@@ -7,6 +7,12 @@
     <title>Brandon Huynh - Eportfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr."></script>
+    <script type="text/javascript">
+        (function (){
+            emailjs.init("")
+        })
+    </script>
 </head>
 <body>
     <section id="landing-page">
@@ -61,6 +67,76 @@
 
             </div>
         </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+                <p class="modal__para">
+                    I'm a software engineer
+                    <br>
+                    and I'm an engineer
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/circle.svg" alt="">
+                        <span class="language__name">
+                            HTML
+                        </span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/circle.svg" alt="">
+                        <span class="language__name">
+                            HTML
+                        </span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/circle.svg" alt="">
+                        <span class="language__name">
+                            HTML
+                        </span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/circle.svg" alt="">
+                        <span class="language__name">
+                            HTML
+                        </span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">
+                    I'm currently open to new opportunities. 
+                    <br> I'd love to hear from you.
+                </h3>
+                <form action="" id="contact__form">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input name="user_name" type="text" class="input" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input name="user_email" type="email" class="input" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea name="message" type="text" class="input" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send it my way
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <img class="modal__overlay--spinner" src="./assets/spinner-solid.svg" alt="">
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking with you soon.
+                </div>
+            </div>
+            <img class="modal__exit click" src="./assets/xmark-solid.svg" alt="">
+        </div>
     </section>
     <section class="projects">
         <div class="container">
@@ -97,5 +173,29 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container ">
+            <div class="row footer__row">
+                <figure class="flex">
+                    <img class="footer__logo--img" src="./assets/logo.svg" alt="">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        GitHub
+                    </a>
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        LinkedIn
+                    </a>
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        Email
+                    </a>
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        Resume
+                    </a>
+                </div>
+                <div class="footer__copyright">Copyright &#169 2022 </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
